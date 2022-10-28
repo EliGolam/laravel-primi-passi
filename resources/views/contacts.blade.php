@@ -2,7 +2,7 @@
 
 @section('content')
     @php
-        $pageName = "Home";
+        $pageName = "Contacts";
     @endphp
 
     <main>
