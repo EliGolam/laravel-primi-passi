@@ -41,14 +41,12 @@
         <h1 class="title">First Steps in Laravel</h1>
         <p class="subtitle">by Elias Mahfuzul</p>
 
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/contacts">Contacts</a></li>
-            </ul>
-        </nav>
+        @component('components.navbar')
+
+        @endcomponent
     </header>
 
+    {{-- CONTENT --}}
     @yield('content')
 
 </body>

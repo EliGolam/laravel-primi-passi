@@ -1,4 +1,4 @@
-@extends('mainLayout')
+@extends('template')
 
 @section('content')
     @php
