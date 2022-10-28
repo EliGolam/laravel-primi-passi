@@ -6,7 +6,7 @@
     @endphp
 
     <main>
-        <h2>This is our {{ $pageName }}</h2>
+        <h2 class="subtitle">This is our {{ $pageName }}</h2>
     </main>
 @endsection
 

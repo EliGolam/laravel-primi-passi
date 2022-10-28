@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;
+
+300;400;600&display=swap);/* CSS Reset styled after Andy Bell's CSS reset: https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing rules and removing default margin and padding */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol, which suggests default styling will be removed */
+
+ul,
+ol {
+  list-style: none;
+  list-style-type: none;
+}
+
+/* Set core root defaults */
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+
+a {
+  text-decoration: none;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* End of CSS reset */
+
+:root {
+  --clr-neutral-dark: hsl(229, 21%, 15%);
+  --clr-neutral: hsl(0, 0%, 100%);
+  --clr-accent: hsl(72, 62%, 63%);
+  --clr-accent-2: hsl(357, 81%, 69%);
+  --clr-accent-3: hsl(256, 54%, 72%);
+  --clr-subtle: hsl(221, 100%, 75%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  background: var(--clr-neutral-dark);
+  color: var(--clr-neutral);
+  font-family: "IBM Plex Mono", monospace, sans-serif;
+  text-align: center;
+}
+
+.flow > * + * {
+  margin-top: 3em;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 75ch;
+}
+
+.subtitle {
+  color: var(--clr-subtle);
+}
+
+h2 {
+  color: var(--clr-accent-3);
+}
+
+cite,
+em {
+  color: var(--clr-accent-2);
+}
+
+strong {
+  color: var(--clr-accent);
+}
+
+.nav-link {
+  color: var(--clr-accent-2);
+}
+

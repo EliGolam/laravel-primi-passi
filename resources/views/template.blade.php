@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
 
-
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
     <!-- My CSS -->
     {{-- <link rel="stylesheet" href="./stylesheets/css-reset.css" type="text/css" />
@@ -41,9 +42,7 @@
         <h1 class="title">First Steps in Laravel</h1>
         <p class="subtitle">by Elias Mahfuzul</p>
 
-        @component('components.navbar')
-
-        @endcomponent
+        @component('components.navbar')@endcomponent
     </header>
 
     {{-- CONTENT --}}
